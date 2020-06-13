@@ -1,0 +1,16 @@
+<div class="row m-4">
+    <h1>{{heroe.nombre | uppercase}}
+    <small>{{heroe.aparicion | date:"y"}}</small></h1>
+</div>
+
+<div class="row">
+    <div class="col">
+        <img [src]="heroe.img" [alt]="heroe.nombre">
+        <hr>
+        <button (click)="volver()" class="btn btn-outline-primary btn-block">Regresar</button>
+    </div>
+    <div class="col">
+        <h2>{{heroe.nombre}}</h2>
+        <p>{{heroe.bio}}</p>
+    </div>
+</div>
